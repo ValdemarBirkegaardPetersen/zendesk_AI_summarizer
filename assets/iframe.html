@@ -9,12 +9,47 @@
                     https://garden.zendesk.com/css-components/utilities/typography/
                    -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/@zendeskgarden/css-bedrock@7.0.21,npm/@zendeskgarden/css-utilities@4.3.0">
+        <script type="text/javascript" src="app.js"></script>
+        <style>
+            /* Styling for the button */
+        .my-button {
+        background-color: #10A37F;
+        color: white;
+        font-weight: bold;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        margin: 20px auto 0;
+        display: block;
+      }
+      .my-button:hover {
+        background-color: #0C846D;
+      }
+
+      #ticket-content {
+        text-align: left;
+        font-size: 13px;
+        margin: 0;
+        padding-top: 20px;
+      }
+
+      /* Styling for the top text */
+      .top-text {
+        text-align: center;
+        font-size: 24px;
+        margin: 0;
+        padding: 20px;
+      }
+          </style>
     </head>
     <body>
-        <h2 class="u-semibold u-fs-xl">Hello, Here!</h2>
-        <h2 id="ticket-content">Test</h2>
+        <p>Run the following button for a ticket summary</p>
+        <button class="my-button" onclick="entryPoint()">Load Summary</button>
+
+        <h2 id="ticket-content"></h2>
 
         <script src="https://static.zdassets.com/zendesk_app_framework_sdk/2.0/zaf_sdk.min.js"></script>
-        <script src="app.js"></script>
     </body>
 </html>
